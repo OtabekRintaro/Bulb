@@ -1,0 +1,208 @@
+/* General */
+body {
+    font-size: 16px;
+    background-color:black;
+    color:white;
+    margin: 0px;
+    padding: 0px;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial;
+    display: flex;
+}
+
+
+/* Button */
+button{
+    background-color: black;
+    border: none;
+    outline: none;
+    display: inline-block;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 12px 48px 12px 48px;
+    border-radius: 2px;
+    color: #ffffff;
+    transition: 0;
+    -webkit-transition: color 0.6s;
+}
+button:hover{
+    color: yellow;
+    transition-duration: 0.6s;
+}
+
+
+/* Start Game block */
+#start-menu {
+    display: block;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px; 
+    padding: 20px;
+    height:200px;
+    width:250px;
+    transition: 1.6s;
+    -webkit-transition: color 1.2s;
+}
+#kings-palace{
+    font-size: 36px;
+}
+
+/* board block and table itself*/
+#game-space {
+    display: none;
+    margin-top: 50px;
+    padding: 10px;
+    outline: 1px solid #FFFFFF;
+}
+#board {
+    float: left;
+    display: block;
+    outline: 1px solid #ffffff;
+}
+
+/* info block */
+#info {
+    float: left;
+    padding-left: 10px;
+    width: 120px;
+}
+
+/* clock - timer */
+#timer {
+    display: inline;
+    font:40px sans-serif;
+}
+
+/* block which appears after finishing the game */
+#result {
+    text-align: center;
+    margin-left: -110px; 
+}
+/* restart button */
+#restart {
+    font: bold 18px sans-serif;
+    display: inline-block;
+    text-align: center;
+    outline: 1px solid white;
+    transition: 0.4s ease-out;
+}
+#restart:hover{
+    outline: 1px solid #FFFF00;
+    color: yellow;
+    transition: 0.4s ease-in;
+}
+/* winning text */
+#winningText {
+    display: block;
+    font: bold 30px sans-serif;
+}
+
+#save {
+    cursor: pointer;
+    transition: 0.4s ease-out;
+}
+#save:hover{
+    color: yellow;
+    cursor: pointer;
+    transition: 0.4s ease-in;
+}
+
+#username{
+    margin-top: 0;
+    font: 25px sans-serif;
+}
+#name-input {
+    display:none;
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px; 
+    width:300px;
+    transition: 1.6s;
+}
+#inp{
+    color: #fff;
+    background: none;
+    border: none;
+    padding: 4px;
+    border-bottom: 1px solid;
+    font-size: 1em;
+    font-weight: 200;
+    transition: all 0.5s ease;
+}
+#inp-submit{
+    margin-top: 4px;
+    font-size: 1.2em;
+}
+
+
+/* Cells  */
+.cell {
+    /* display: block; */
+    background-color: #ffffff;
+    border: 1.5px solid #000000;
+    width: 60px;
+    height: 60px;
+    transition: 0.8s ease-in;
+}
+
+/* cells which are enlightened */
+.lightcell
+{
+    background-color: #FFF154;
+    border: 1.5px solid #000000;
+    width: 60px;
+    height: 60px;
+    transition: 1.2s ease-out;
+}
+
+/* bulb image */
+.bulb {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* illuminated bulb */
+.illuminated
+{
+    background-color: #DF0118;
+    transition: 1.2s ease-out;
+}
+
+/* the cells which are taken with bulbs */
+.taken {
+    border: 1.5px solid #000000;
+    width: 60px;
+    height: 60px;
+}
+
+/* black cells */
+.wall {
+    background-color: #000000;
+    border: 1.5px solid #000000;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font: 20px arial;
+}
+/* black cells which are surrounded with sufficient amount of bulbs */
+.fit {
+    color: #32CD32;
+}
+/* black cells which are surrounded by more bulbs than needed */
+.unfit{
+    color: #DF0118;
+}
+
+
+
+
